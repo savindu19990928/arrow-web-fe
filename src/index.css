@@ -1,0 +1,154 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  color: #0a0a0b;
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+::selection {
+  background: #b9b9ff;
+  color: #0a0a0b;
+}
+:focus-visible {
+  outline: 2px solid #5b5bef;
+  outline-offset: 2px;
+}
+.headline {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+}
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6b6b73;
+}
+.btn-accent {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  background: #5b5bef;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.8rem 1.6rem;
+  white-space: nowrap;
+  transition: background-color 150ms cubic-bezier(0.23, 1, 0.32, 1), transform 120ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.btn-accent:hover {
+  background: #4646d6;
+}
+.btn-accent:active {
+  transform: scale(0.97);
+}
+.input {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid #e7e7e9;
+  background: #ffffff;
+  padding: 0.7rem 0.9rem;
+  font-size: 0.9rem;
+  color: #0a0a0b;
+  outline: none;
+  transition: border-color 150ms cubic-bezier(0.23, 1, 0.32, 1), box-shadow 150ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.input:focus {
+  border-color: #0a0a0b;
+  box-shadow: 0 0 0 3px rgba(91, 91, 239, 0.15);
+}
+.label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  color: #2e2e33;
+}
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  background: #0a0a0b;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.75rem 1.5rem;
+  white-space: nowrap;
+  transition: background-color 150ms cubic-bezier(0.23, 1, 0.32, 1), transform 120ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.btn-primary:hover {
+  background: #2e2e33;
+}
+.btn-primary:active {
+  transform: scale(0.97);
+}
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  border: 1.5px solid #0a0a0b;
+  background: #ffffff;
+  color: #0a0a0b;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.7rem 1.4rem;
+  white-space: nowrap;
+  transition: background-color 150ms cubic-bezier(0.23, 1, 0.32, 1), color 150ms cubic-bezier(0.23, 1, 0.32, 1), transform 120ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.btn-outline:hover {
+  background: #0a0a0b;
+  color: #ffffff;
+}
+.btn-outline:active {
+  transform: scale(0.97);
+}
+.btn-outline:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.slant-right {
+  clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);
+}
+.slant-left {
+  clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%);
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
