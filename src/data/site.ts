@@ -7,10 +7,9 @@ export const contactInfo = {
   hours: 'Mon – Sat, 9:00 AM – 6:00 PM'
 };
 
-/** Static navigation. The "Shop" mega menu is populated from /api/catalog/categories/. */
+/** Static navigation (after "E-Bikes" mega menu + "Accessories", which come from /api/catalog/categories/). */
 export const navLinks = [
-{ label: '3D Showroom', to: '/shop?has_3d_model=true' },
-{ label: 'Service', to: '/maintenance' },
+{ label: 'Reviews', to: '/#reviews' },
 {
   label: 'Support',
   to: '/contact',
@@ -18,10 +17,12 @@ export const navLinks = [
   { label: 'Track Order', to: '/track-order' },
   { label: 'Warranty', to: '/warranty' },
   { label: 'Refund Policy', to: '/refund-policy' },
+  { label: 'FAQs', to: '/contact#faq' },
   { label: 'Contact Us', to: '/contact' }]
 
 },
-{ label: 'About', to: '/about' }];
+{ label: 'Find a Store', to: '/contact' },
+{ label: 'Service', to: '/maintenance' }];
 
 
 export const socialLinks = [
@@ -32,14 +33,14 @@ const;
 
 /** Brand photography — Sri Lankan riders and locations. Product imagery always comes from the API. */
 export const images = {
-  hero: "/2ed444ed-1549-48df-b32f-fde4267ee2c7.jpg",
-  galleFace: "/027acfa2-65ce-4be6-8f61-71f2fdc69996.jpg",
-  commuter: "/0582fc6e-f6b1-425a-8729-edb39309555a.jpg",
-  workshop: "/cc9e4b15-0399-43bd-be48-76bd3b21ebc1.jpg",
-  hillCountry: "/1738cc0b-a37e-422a-9241-3d0573e2b89f.jpg",
-  aboutHero: "/1738cc0b-a37e-422a-9241-3d0573e2b89f.jpg",
+  hero: "/87051f7c-42ae-4c01-83ff-76996d75df53.jpg",
+  galleFace: "/f3263429-b512-473a-b28f-c409ff95ae53.jpg",
+  commuter: "/4c783a0d-4c2d-481f-a333-be8cca5f80c7.jpg",
+  workshop: "/7d6165b0-3ec9-4f37-9e08-2a3aabfdcb48.jpg",
+  hillCountry: "/10819625-dee5-4bff-b4c3-28fea5492f82.jpg",
+  aboutHero: "/10819625-dee5-4bff-b4c3-28fea5492f82.jpg",
   story: "/027acfa2-65ce-4be6-8f61-71f2fdc69996.jpg",
-  riderVideo: "/1738cc0b-a37e-422a-9241-3d0573e2b89f.jpg"
+  riderVideo: "/10819625-dee5-4bff-b4c3-28fea5492f82.jpg"
 };
 
 export const whyArrow = [

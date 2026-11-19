@@ -1,11 +1,27 @@
 import React from 'react';
 
-const LOGO_SRC = "/Arrow_Ventures_Logo.png";
+export const LOGO_SRC = "/Arrow_Ventures_Logo.png";
 
 interface LogoProps {
   inverted?: boolean;
   compact?: boolean;
   className?: string;
+}
+
+/** Tenways-style letter-spaced wordmark with the brand symbol on its left. */
+export function Wordmark({ inverted = false, className = '' }: {inverted?: boolean;className?: string;}) {
+  return (
+    <span
+      aria-label="Arrow Ventures"
+      className={`inline-flex items-center gap-2.5 whitespace-nowrap text-[17px] font-semibold leading-none tracking-[-0.015em] md:text-[19px] ${inverted ? 'text-white' : 'text-ink'} ${className}`}>
+      
+      <LogoMark inverted={inverted} className="h-[1.5em] w-[1.5em] shrink-0" />
+      <span aria-hidden="true" className="flex items-center gap-[0.28em] pb-[0.06em]">
+        <span>Arrow</span>
+        <span className="font-light opacity-80">Ventures</span>
+      </span>
+    </span>);
+
 }
 
 export function LogoMark({ className = 'h-10 w-10', inverted = false }: {className?: string;inverted?: boolean;}) {
@@ -30,7 +46,7 @@ export function Logo({ inverted = false, compact = false, className = '' }: Logo
         compact ? 'text-[13px]' : 'text-[13px] md:text-[15px]'}`
         }>
         
-        Arrow<span className="hidden sm:inline"> Ventures</span>
+        Arrow Ventures
       </span>
     </span>);
 

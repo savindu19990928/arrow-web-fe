@@ -1,46 +1,63 @@
-/** Home hero image carousel — Sri Lankan riders and locations. */
-export const heroSlides = [
+/**
+ * Home hero carousel — Tenways-style: light lead line, bold model line, offer line, bike thumbnail switcher.
+ * A slide with `video` plays it muted + looped, using `image` as the poster while it loads.
+ */
+export type HeroSlide = {
+  id: string;
+  lead: string;
+  title: string;
+  offer: string;
+  cta: {label: string;to: string;};
+  image: string;
+  video?: string;
+  thumb: string;
+  alt: string;
+  focus: string;
+};
+
+export const heroSlides: HeroSlide[] = [
 {
-  id: 'galle-face',
-  label: 'Galle Face',
-  location: 'Galle Face Green, Colombo',
-  title: 'Ride the city at golden hour',
-  text: 'Quiet, light and ready for the daily ride — from Colombo traffic to the sea-front promenade.',
-  cta: { label: 'Shop e-bikes', to: '/shop' },
-  image: "/e5aa9894-6b1c-4877-9649-a0827d3e8395.jpg",
-  alt: 'A rider on a black Arrow e-bike along Galle Face Green at sunset',
+  id: 'ride',
+  lead: 'Made for Sri Lankan Streets',
+  title: 'Electric, Everyday',
+  offer: 'Free islandwide delivery on orders over LKR 100,000',
+  cta: { label: 'Explore More', to: '/shop' },
+  image: "/b4cfff67-2857-4ee3-905b-89c028dc2911.jpg",
+  video: 'https://cdn.shopify.com/videos/c/o/v/6e16fb1725b643cca37124c99aa20af4.mp4',
+  thumb: "/67b957c5-a44c-44b8-b969-19ef193f6926.jpg",
+  alt: 'Three friends riding grey e-bikes along the Colombo seafront at golden hour',
   focus: '70% center'
 },
 {
-  id: 'hill-country',
-  label: 'Hill country',
-  location: 'Nuwara Eliya tea estates',
-  title: 'Climbs that feel flat',
-  text: 'Torque-sensing assist and long-range batteries made for misty hill-country gradients.',
-  cta: { label: 'Explore mountain e-bikes', to: '/shop?ordering=-average_rating' },
-  image: "/a314e69b-2f5d-47b9-9ec6-40cbf9355f1e.jpg",
-  alt: 'A cyclist climbing a winding road through misty tea plantations',
+  id: 'city',
+  lead: 'The Lightweight Champion',
+  title: 'City E-Bikes',
+  offer: 'Free islandwide delivery on orders over LKR 100,000',
+  cta: { label: 'Explore More', to: '/shop' },
+  image: "/87051f7c-42ae-4c01-83ff-76996d75df53.jpg",
+  thumb: "/de3fd3e6-2c02-43f0-bba4-a06a007be78f.jpg",
+  alt: 'A rider on a black lightweight city e-bike passing modern white architecture',
   focus: '65% center'
 },
 {
-  id: 'city-night',
-  label: 'After dark',
-  location: 'Pettah, Colombo',
-  title: 'Built for the commute home',
-  text: 'Integrated lights, puncture-resistant tyres and a frame that shrugs off monsoon rain.',
-  cta: { label: 'Shop commuter bikes', to: '/shop?in_stock=true' },
-  image: "/b2bd96b7-81e3-43f4-be42-5377b300bfe1.jpg",
-  alt: 'A commuter riding an e-bike down a rain-slick Colombo street at night',
-  focus: '68% center'
+  id: 'cruiser',
+  lead: 'Easygoing, Every Day',
+  title: 'Cruiser E-Bikes',
+  offer: 'Split your payment with Koko or Mintpay at checkout',
+  cta: { label: 'Explore More', to: '/shop?ordering=-average_rating' },
+  image: "/f3263429-b512-473a-b28f-c409ff95ae53.jpg",
+  thumb: "/aa92711a-de50-4842-a801-bcf7ec2dc0d0.jpg",
+  alt: 'A woman riding a mint step-through cruiser e-bike along a palm-lined promenade',
+  focus: '70% center'
 },
 {
-  id: 'coast-road',
-  label: 'South coast',
-  location: 'Coast road, Mirissa',
-  title: 'Weekends, further',
-  text: 'Swap the tuk-tuk for the coast road. Up to 80 km on a single charge.',
-  cta: { label: 'Try it in 3D', to: '/shop?has_3d_model=true' },
-  image: "/4d838b3a-9a08-40e0-a417-e86abff3ec0b.jpg",
-  alt: 'Two riders on e-bikes cruising a palm-lined coastal road',
-  focus: '65% center'
+  id: 'hybrid',
+  lead: 'Go Further, Off the Map',
+  title: 'Hybrid E-Bikes',
+  offer: 'Book a test ride or service with our Sri Lankan technicians',
+  cta: { label: 'Explore More', to: '/shop?in_stock=true' },
+  image: "/0dff9f74-c9a9-4d66-aee6-c832cb577351.jpg",
+  thumb: "/19402f2f-f3a5-484c-86aa-dbfbb263fb6c.jpg",
+  alt: 'A rider on a navy hybrid e-bike on a countryside gravel road at golden hour',
+  focus: '70% center'
 }];
